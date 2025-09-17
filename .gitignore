@@ -1,0 +1,45 @@
+#---------------------------------------------------#
+# JetBrains/Android Studio-specific files and folders
+#---------------------------------------------------#
+.idea/
+.gradle/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+
+#---------------------------------------------------#
+# Gradle-related files and directories
+#---------------------------------------------------#
+/build/
+/app/build/
+/local.properties
+/gradlew
+/gradlew.bat
+
+# User-specific local settings
+/.idea/workspace.xml
+/.idea/assetWizardSettings.xml
+
+#---------------------------------------------------#
+# Android build artifacts and temp files
+#---------------------------------------------------#
+# Compiled files
+*.apk
+*.aar
+*.ap_
+*.class
+*.dex
+*.apk.
+*.log
+
+# NDK-related files
+.cxx/
+.externalNativeBuild/
+*.so
+
+# Other temporary files and cache
+.temp/
+.tmp/
+.cxx/
+/captures/
