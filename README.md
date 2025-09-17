@@ -16,6 +16,23 @@ Light & Dark Theme Support: Built-in logic provides optimized colors for both li
 
 ⬇️ Installation
 Add the following dependency to your module's build.gradle.kts file:
+
+```Gradle
+// settings.gradle.kts
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url = uri("https://maven.pkg.github.com/sachingurnaney/compose-shimmer")
+            credentials {
+                username = "<YOUR_GITHUB_USERNAME>"
+                password = "<YOUR_PERSONAL_ACCESS_TOKEN>"
+            }
+        }
+    }
+}
 ```Gradle
 // build.gradle.kts (Module)
 dependencies {
@@ -128,3 +145,4 @@ shimmerEffect = ShimmerEffect.Ventilator
         MyShimmerLayout(shimmerScope = this)
     }
 }
+
